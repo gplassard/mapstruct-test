@@ -14,8 +14,8 @@ import java.util.List;
 public class CarController {
     private CarMapper carMapper;
 
-    public CarController() {
-        this.carMapper = CarMapper.INSTANCE;
+    public CarController(CarMapper carMapper) {
+        this.carMapper = carMapper;
     }
 
     @RequestMapping("/api/v1/cars")
